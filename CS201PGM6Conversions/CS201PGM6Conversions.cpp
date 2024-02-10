@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <sstream>
- 
+
 using namespace std;
 
 //FUNCTION DECLARATIONS
@@ -17,14 +17,30 @@ string decToBin(const string& inVal);
 
 string decToBase(const string& inVal, int base);
 //PRE: input string is sent to function
-//POST: if valid, return a string that is the equivalent value in the base given 
+//POST: if valid, return a string that is the equivalent value in the base given
 
 int bintoDec(const string& inVal, int base);
 //PRE: input string is sent to function
-//POST: if valid, return the decimal value of the binary string 
+//POST: if valid, return the decimal value of the binary string
 
 
 int main() {
+    char user_input = 'y';
+    while ((user_input == 'y') or (user_input == 'Y') {
+        char user_choice;
+        cout << "Please enter what you would like to do: " << endl;
+        cout << "\t" << "a. Convert a number to decimal (enter a value and a given base)" << endl;
+        cout << "\t" << "b. Convert a decimal to another base (enter a decimal value and a base)" << endl;
+        cout << "\t" << "c. Convert a number from base1 to base2 (enter number, base1, base2)" << endl;
+        cout << "\t" << "d. Quit" << endl;
+        cin >> user_choice;
+        if (user_input == 'a') {
+            input_value;
+            cout << "Enter your input value:" << endl;
+            cin << i
+        }
+    }
+    /*
     string input;
     cout << "Enter a decimal number: ";
     cin >> input;
@@ -33,7 +49,7 @@ int main() {
 
     cout << "Output: " << binaryResult << endl;
 
-    return 0;
+    return 0; */
 }
 
 //FUNCTION DEFINITIONS
@@ -46,7 +62,7 @@ string decToBin(const string& inVal) {
     /*
     IF (isDigits(inVal)) {
         set inVal to integer type
-        outVal = “”
+        outVal = ??
         decVal = inVal string converted to decimal
         WHILE (decVal > 0)
             tempVal = decValue % 2
@@ -66,12 +82,12 @@ string decToBase(const string& inVal, int base) {
     /*
     IF (isDigits(inVal) && base >= 2 and base <=16) {
         set inVal to integer type
-        outVal = “”
+        outVal = ??
         decVal = inVal string converted to decimal
         WHILE (decVal > 0)
             tempVal = decValue % base
             if (tempVal == 10)      outVal = 'A' + outVal
-            else if (tempVal == 11) outVal = 'B' + outVal 
+            else if (tempVal == 11) outVal = 'B' + outVal
             :
             else outVal = char(tempVal) + outVal
             decVal = decVal/base
